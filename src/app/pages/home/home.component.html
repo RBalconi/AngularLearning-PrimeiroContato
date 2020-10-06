@@ -1,0 +1,9 @@
+<div>
+  <form (ngSubmit)="onSubmit()">
+    <input type="text" id="login" name="login" required [(ngModel)]="login" />
+    <button type="submit">Pesquisar</button>
+  </form>
+</div>
+<p>{{ login }}</p>
+
+<app-list-users></app-list-users>

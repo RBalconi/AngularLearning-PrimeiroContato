@@ -1,0 +1,14 @@
+<div class="container">
+  <form (ngSubmit)="onSubmit()">
+    <input type="text" id="login" name="login" required [(ngModel)]="login" />
+    <button type="submit">Pesquisar</button>
+  </form>
+  <div *ngIf="users.id !== undefined" class="data">
+    <div class="avatar">
+      <img src="{{ users.avatar_url }}" />
+    </div>
+    <h2>{{ users.name }}</h2>
+    <h3>{{ users.bio }}</h3>
+    <h3>Followers: {{ users.followers }}</h3>
+  </div>
+</div>
